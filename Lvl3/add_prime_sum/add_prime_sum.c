@@ -52,13 +52,12 @@ int add_prime_sum(int n)
     int i = 2;
     while (i <= n)
     {
-        if (is_prime(i)) // Se i è primo lo aggiungi al totale
+        if (optimized_is_prime(i)) // Se i è primo lo aggiungi al totale
             sum += i;
         i++;
     }
     return sum;
 }
-
 
 void ft_putnbr(int n)
 {
@@ -68,13 +67,6 @@ void ft_putnbr(int n)
     write(1, &c, 1);
 }
 
-
-void	add_prime_sum(int nbr)
-{
-	
-
-
-
 int main(int ac, char **av)
 {
 	if (ac != 2)
@@ -82,14 +74,11 @@ int main(int ac, char **av)
 		write(1, "0", 1);
 		exit(0); // Uscita senza errore
 	}
-	nbr = modified_atoi(av[1]); // Modified perché interrompe se minore di 0
-	if (n > 1)
-            ft_putnbr(add_prime_sum(n));
+	int nbr = modified_atoi(av[1]); // Modified perché interrompe se minore di 0
+	if (nbr > 1)
+            ft_putnbr(add_prime_sum(nbr));
         else // 1 e 0 non sono primi
             write(1, "0", 1);
-    }
-    else
-        write(1, "0", 1);
     write(1, "\n", 1);
     return 0;
 }
