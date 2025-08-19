@@ -1,12 +1,6 @@
 #include <unistd.h>
 
-// INITIAL PLAN:
-// 1) Iterate on the 1st char of s2 looking for a match. If we find it, we move to s1[1], 
-//    iterate from where the match was to /0. If s1 ends and the last char of s1 is also found in s2,
-//    then we display 1 and a new line. Otherwise 0 and new line.
-
 // NOTE: the empty string is hidden in any string, so if (!s1) we can return 1 and newline 
-
 // NOTE: remember to protect your indexes from segmentation faults!!
 
 int	ft_hidenp(char *s1, char *s2)
