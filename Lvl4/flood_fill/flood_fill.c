@@ -5,7 +5,7 @@
 ** cur: punto corrente
 ** to_fill: carattere di riferimento da sostituire
 */
-static void	fill(char **tab, t_point size, t_point cur, char to_fill)
+static void	fill(char **tab, t_point size, t_point cur, char to_fill) // In flood_fill è begin, ma qui lo chiamo cur perché viene sostituito
 {
 	// 1. Controllo dei limiti (se esco dall'array, termino subito)
 	if (cur.x < 0 || cur.x >= size.x || cur.y < 0 || cur.y >= size.y)
