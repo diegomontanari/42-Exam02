@@ -1,3 +1,4 @@
+```txt
 Assignment name  : ft_list_foreach
 Expected files   : ft_list_foreach.c, ft_list.h
 Allowed functions:
@@ -22,3 +23,4 @@ typedef struct    s_list
     struct s_list *next;
     void          *data;
 }                 t_list;
+```
