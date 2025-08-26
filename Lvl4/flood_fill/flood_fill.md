@@ -1,3 +1,4 @@
+```txt
 Assignment name  : flood_fill
 Expected files   : *.c, *.h
 Allowed functions: -
@@ -83,3 +84,4 @@ F00F000F
 F0FF000F
 FFF0000F
 $>
+```
