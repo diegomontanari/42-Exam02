@@ -51,7 +51,7 @@ char *ft_itoa(int nbr)
     if (n < 0)
     {
         result[0] = '-';
-        n = -n; // Cambio segno per farlo tornare positivo ed estrarre nel secondo while
+        n = -n; // Cambio segno per farlo tornare positivo ed estrarre nel secondo while (senza questa riga la conversione -n + '0' darebbe risultati sbagliatissimi ovviamente! in get_len dato che devo solo dividere il numero / 10 stica se è negativo)
     }
     while (n != 0)
     {
