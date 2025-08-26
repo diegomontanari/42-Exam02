@@ -1,3 +1,4 @@
+```txt
 Assignment name  : sort_int_tab
 Expected files   : sort_int_tab.c
 Allowed functions:
@@ -11,4 +12,4 @@ It must sort (in-place) the 'tab' int array, that contains exactly 'size'
 members, in ascending order.
 
 Doubles must be preserved.
-
+```
