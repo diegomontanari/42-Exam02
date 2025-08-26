@@ -2,9 +2,6 @@
 
 /*
 ** Funzione ricorsiva di riempimento.
-**
-** tab: griglia 2D
-** size: dimensioni massime della griglia
 ** cur: punto corrente
 ** to_fill: carattere di riferimento da sostituire
 */
