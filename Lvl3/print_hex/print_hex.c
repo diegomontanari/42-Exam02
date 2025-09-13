@@ -8,7 +8,6 @@ int	simplified_atoi(char *str)
 	// If this were a real atoi, I would need to skip spaces
 	// and handle the sign, but it's not necessary here
 
-
 	while(str[i] >= '0' && str[i] <= '9')
 	{
 		res = res * 10 + (str[i] - '0');
