@@ -21,7 +21,7 @@ void	print_hex(int n)
 	char *base = "0123456789abcdef";
 	
 	if (n >= 16)
-		print_hex(n / 16); // Parte ricorsiva
+		print_hex(n / 16); // Recursive step to ensure LSF is printed before other elements
 	char c = base[n % 16];
 	write(1, &c, 1);
 }
@@ -30,7 +30,7 @@ int	main(int ac, char **av)
 {
 	if (ac == 2)
 	{
-		int n = simplified_atoi(av[1]); // converte la stringa in intero
+		int n = simplified_atoi(av[1]); // converts from string to int
         	print_hex(n);
 	}
 	write(1, "\n", 1);
