@@ -4,7 +4,7 @@ void ft_list_foreach(t_list *begin_list, void (*f)(void *))
 {
   while (begin_list) // Finché non arrivi alla fine della lista
   {
-    (*f)(begin_list->data); // Applica la funzione al dato (il campo begin_list-> data è un void pointer, vedi la struct se non sei sicuro(
+    (*f)(begin_list->data); // This line applies the function to the data. IMPORTANT: f(data) and (*f)(data) are EQUIVALENT in C—they do exactly the same thing.
     begin_list = begin_list->next; // // Vai al prossimo nodo
   }
 }
