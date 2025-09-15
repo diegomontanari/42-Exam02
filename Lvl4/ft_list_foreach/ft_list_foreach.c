@@ -15,6 +15,6 @@ These do the exact same thing; both call the function.
 If you use (*f)(arg), you explicitly dereference the function (call it),  
 while if you use f(arg), the compiler dereferences it for you when calling.  
 But it’s the same thing.  
-The purpose of this exercise is simply to understand that functions also have a memory address.
+The purpose of this exercise is simply to understand that functions also have a memory address, just like a variable has.
 */
 
