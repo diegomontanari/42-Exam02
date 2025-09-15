@@ -28,6 +28,8 @@ void ft_fprime(long n)
         {
             putnbr(p);
             n /= p;  // Division without recursion
+            if (n > 1) // If there are still factors left, print the asterisk
+                write(1, "*", 1);
         }
         else
             p++;
