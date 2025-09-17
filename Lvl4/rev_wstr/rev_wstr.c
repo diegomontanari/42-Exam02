@@ -55,8 +55,8 @@ void	ft_rev_wstr(char *str)
             		break;
 		if (first)
 			write(1, " ", 1);
-		start = rskip_word(str, i);
-		write(1, &str[start + 1], i - start); // Il buffer ti tutta la parola, questo sarà stampato
+		start = rskip_word(str, i); // ha valore di spazio prima di parola
+		write(1, &str[start + 1], i - start); // Di tt str stampa da start + 1 per esattamente i - start caratteri (ultimo carattere parola - spazio prima di parola = lunghezza parola)
 		i = start; // Faccio ripartire dallo spazio prima
 		first = 1; // Da ora in poi se first = 1 si stampano gli spazi t
 	}
