@@ -28,7 +28,7 @@ int rskip_space(char *str, int i)
 // immediatamente precedente la parola.
 int rskip_word(char *str, int i)
 {
-    while (i >= 0 && !is_delimiter(str[i]))
+    while (i >= 0 && !is_delimiter(str[i])) // Secondo questa logica se non è delimiter è parola, ma è proprio così che specifica il subject quindi proseguiamo
         i--;
     return i;
 }
