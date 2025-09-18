@@ -17,7 +17,7 @@ void    fprime(long n)
                 }
                 else
                         p++;
-        }
+        } // Finito questo ciclo n = p, quindi lo stampiamo
         printf("%ld", p);
 }
 
