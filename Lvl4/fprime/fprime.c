@@ -1,56 +1,50 @@
 #include <unistd.h>
 #include <stdlib.h> // atoi
 
-void putnbr(long n)
+#include <stdio.h>
+#include <stdlib.h>
+
+void    fprime(long n)
 {
-    char c;
-    
-    if (n >= 10)
-        putnbr(n / 10); // Recursive call
-    c = (n % 10) + '0'; // Convert LSF (Less Significant Figure) to char
-    write(1, &c, 1);
-}
+        long p = 2;
 
-void ft_fprime(long n)
-{
-    long p = 2;
-
-    // Subjects tells input > 0, no need to check n <= 0
-    if (n == 1)
-    {
-        write(1, "1\n", 2);
-        return ;
-    }
-
-    while (n > 1) // The base case of prime factorization is n = 1, so stop when n is no longer greater than 1
-    {
-        if (n % p == 0)
+        while (n != p)
         {
-            putnbr(p);
-            n /= p;  // Division without recursion
-            if (n > 1) // If there are still factors left, print the asterisk
-                write(1, "*", 1);
+                if (n % p == 0)
+                {
+                        printf("%ld*", p);
+                        n /= p;
+                }
+                else
+                        p++;
         }
-        else
-            p++;
-    }
+        printf("%ld", p);
 }
 
-int main(int ac, char **av)
+int     main(int ac, char **av)
 {
-    if (ac == 2)
-    {
-        long n = atoi(av[1]);
-        ft_fprime(n);
-    }
-    write(1, "\n", 1);
-    return 0;
+        if (ac == 2)
+        {
+                long n = atoi(av[1]);
+                if (n == 1)
+                {
+                        printf("1");
+                        return 0;
+                }
+                else
+                        fprime(n);
+        }
+        printf("\n"); 
+        return 0;
 }
+
 
 /*
 Do you want to do the recursive version of this exercise?
 
 Then you need to define the function with p as a parameter and remove the while loop:
+
+(note: here I am not using printf but it's the same thing)
 
 void ft_fprime_rec(long n, long p)
 {
