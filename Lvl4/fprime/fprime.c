@@ -1,9 +1,6 @@
 #include <unistd.h>
 #include <stdlib.h> // atoi
 
-#include <stdio.h>
-#include <stdlib.h>
-
 void    fprime(long n)
 {
         long p = 2;
