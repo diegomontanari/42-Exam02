@@ -59,4 +59,6 @@ If you have only the string but not the hand:
 
 With the hand (pointer to pointer), you can move along the string safely, 
 update connections, and remove nodes without breaking the list. Chiarissimo!
+
+I call this pattern the "Hand-and-String Removal Pattern", because it uses a hand to move around from a "safe distance".
 */
