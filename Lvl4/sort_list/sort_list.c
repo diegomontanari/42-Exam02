@@ -2,7 +2,7 @@
 
 t_list *sort_list(t_list *lst, int (*cmp)(int, int))
 {
-	t_list *start = lst;        // Salvo il puntatore all'inizio della lista
+	t_list *start = lst;        // Salvo il puntatore all'inizio della lista per ripartire dall'inizio ogni volta (tipo i = 0 in sort_int_tab)
 	int temp;                   // Variabile temporanea per scambiare i valori
 
 	while (lst != NULL && lst->next != NULL)  // Finché ci sono almeno due nodi da confrontare
