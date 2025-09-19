@@ -54,6 +54,22 @@ ITERATION 2:
 -> reversed is still 00000000 (0 * 2)
 
 octet & 1 → 
+*/
 
+/*
+OPERATORE VIRGOLA (COMMA OPERATOR)
+Come funziona l'operatore virgola?
 
+Valuta l'espressione a sinistra della virgola.
+Poi valuta quella a destra.
+
+L'intera espressione restituisce il valore dell'ultima espressione (quella a destra).
+
+Quindi:
+
+a = (b = 2, b + 3);
+Prima b = 2 viene eseguito.
+Poi b + 3 viene valutato.
+Il risultato di tutta l'espressione (b = 2, b + 3) è 5.
+Quindi a diventa 5.
 */
