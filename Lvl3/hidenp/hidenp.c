@@ -11,7 +11,7 @@ int	ft_hidenp(char *s1, char *s2)
 	// Loop while both strings still have characters
 	while (s1[i] && s2[j])
 	{
-        	// If current characters match, move forward in s1
+        	// If current characters match, move forward in s1 (this works but remember that this means the the pointer is empty, if I wanted to check if str = " " I should have used if (!str[0])
         	if (s1[i] == s2[j])
             		i++;
         	// Always move forward in s2
