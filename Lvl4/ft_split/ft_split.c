@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 
 int	is_delimiter(char c)
 {
