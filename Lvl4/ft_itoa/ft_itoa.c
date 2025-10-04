@@ -40,8 +40,8 @@ int get_len(int n)
 */
 char *ft_itoa(int nbr)
 {
-    int len = get_len(nbr);
-    long long n = nbr; // Converto per essere più sicuro nei casi limite
+    long n = nbr; // Converto per gestire overflow
+    int len = get_len(n);
     char *result = malloc(len + 1);
     if (!result)
         return NULL;
