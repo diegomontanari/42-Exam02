@@ -23,7 +23,7 @@ void sort_int_tab(int *tab, unsigned int size)
 	int i = 0;
 	int temp;
 	
-	while (i < size -1) // Because I start from 0 and not 1 (If i started from 1 I'd check <= , but I sill need to add -1 because I'm checking not only tab[i] but also tab[i + 1]
+	while (i < size -1) // Because I start from 0 and not 1 (If i started from 1 I'd check <= , but I'd sill need to add -1 because I'm checking not only tab[i] but also tab[i + 1]
 	{
 		if (tab[i] > tab[i + 1]) // Need to swap
 		{
