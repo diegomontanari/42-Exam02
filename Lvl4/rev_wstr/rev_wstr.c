@@ -1,8 +1,3 @@
-// 1 LINER: Print the words of a string in reverse order, keeping the words themselves intact.
-// REASONING QUESTIONS: How can I? The best way is to iterate backwards on the string and print each work.
-// REASONING 2: a word is separated by: spaces, tabs, start/end of string.
-// NOTE: Words will always be separated by one space in tests.
-
 #include <unistd.h>
 #include <stdlib.h>
 
@@ -66,7 +61,7 @@ void	ft_rev_wstr(char *str)
 int     main(int ac, char **av)
 {
         if (ac == 2)
-                rev_wstr(av[1]);
+                ft_rev_wstr(av[1]);
         write(1, "\n", 1);
         return 0;
 }
