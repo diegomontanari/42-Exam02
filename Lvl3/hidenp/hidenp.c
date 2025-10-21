@@ -49,5 +49,6 @@ CASO	DESCRIZIONE VALORE DEL PUNTATORE	CONTENUTO
 NULL	La stringa non esiste	char *str = NULL;	Puntatore nullo, non punta a nessuna area di memoria
 Vuota	La stringa esiste ma è vuota	char *str = "" oppure char str[] = {'\0'};	Primo carattere è '\0', quindi lunghezza zero
 
-Perché specifico questo? Perché s1 non sarà mai NULL, perché è gestito da (ac != 3), ma può essere vuota, ovvero contentere solo '\0'. Tuttavia, sai benissimo che questo caso è già gestito alla fine di hidenp()
+Perché specifico questo? Perché s1 non sarà mai NULL, perché è gestito da (ac != 3), ma può essere vuota, ovvero contentere solo '\0'. 
+Tuttavia, sai benissimo che questo caso è già gestito alla fine di hidenp()
 */
