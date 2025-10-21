@@ -34,7 +34,7 @@ int	main(int ac, char **av)
 	}
 	char *s1 = av[1];
 	char *s2 = av[2];
-	if ((!s1) || (ft_hidenp(s1, s2))) // Se s1 è hidden in s2 (!s1 is hidden in any string)
+	if ((!s1) || (ft_hidenp(s1, s2))) // Se s1 è hidden in s2 (!s1 is hidden in any string) THIS CHECK IS REDUNDANT, but I don't care now
 	{
 		write(1, "1\n", 2);
 		return (0);
@@ -42,3 +42,12 @@ int	main(int ac, char **av)
 	write(1, "0\n", 2); // s1 non hidden in s2 prints 0 and new line
 	return (0);
 }
+/*
+
+Le due condizioni principali per una stringa in C
+CASO	DESCRIZIONE VALORE DEL PUNTATORE	CONTENUTO
+NULL	La stringa non esiste	char *str = NULL;	Puntatore nullo, non punta a nessuna area di memoria
+Vuota	La stringa esiste ma è vuota	char *str = "" oppure char str[] = {'\0'};	Primo carattere è '\0', quindi lunghezza zero
+
+Perché specifico questo? Perché s1 non sarà mai NULL, perché è gestito da (ac != 3), ma può essere vuota, ovvero contentere solo '\0'. Tuttavia, sai benissimo che questo caso è già gestito alla fine di hidenp()
+*/
