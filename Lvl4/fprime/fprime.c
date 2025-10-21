@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 #include <stdlib.h> // atoi
 
 void    fprime(long n)
@@ -20,18 +20,20 @@ void    fprime(long n)
 
 int     main(int ac, char **av)
 {
+        long n;
+        
         if (ac == 2)
         {
-                long n = atoi(av[1]);
+                n = atoi(av[1]);
+                if (n <= 0)
+                        return (printf("\n"), 0);
+        
                 if (n == 1)
-                {
-                        printf("1");
-                        return 0;
-                }
+                        return (printf("1\n"), 0);
                 else
                         fprime(n);
-        }
-        printf("\n"); 
+        } 
+        printf("\n"); // Va messo per forza qui sotto per gestire anche il caso in cui ac != 2 oltre che il ramo else
         return 0;
 }
 
