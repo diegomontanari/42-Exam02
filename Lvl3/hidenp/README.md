@@ -1,3 +1,5 @@
+#subject
+```txt
 Assignment name  : hidenp
 Expected files   : hidenp.c
 Allowed functions: write
@@ -24,3 +26,4 @@ $>./hidenp "abc" "btarc" | cat -e
 $>./hidenp | cat -e
 $
 $>
+```
