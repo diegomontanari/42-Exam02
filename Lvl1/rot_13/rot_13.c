@@ -14,12 +14,12 @@ void	rot_13(char *str)
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
-			c = 'A' + (str[i] - 'A' + 13) % 26;
+			c = 'A' + (str[i] - 'A' + 13) % 26; // Pattern base, range relativo, offset e cerchio, ovvero modulo (fantastico!)
 			putchar(c);
 		}		
 		else if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			c = 'a' + (str[i] - 'a' + 13) % 26;
+			c = 'a' + (str[i] - 'a' + 13) % 26; // Pattern base, range relativo, offset e cerchio, ovvero modulo (fantastico!)
                         putchar(c);
 		}
 		else
