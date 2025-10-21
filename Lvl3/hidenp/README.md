@@ -1,4 +1,3 @@
-#subject
 ```txt
 Assignment name  : hidenp
 Expected files   : hidenp.c
